@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lions Cricket Academy - Kota</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 25px;
+    animation: fadeDown 1s ease;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.tagline {
+    opacity: 0.8;
+    animation: fadeIn 2s ease;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 42px;
+    animation: zoomIn 1s ease;
+}
+
+.hero p {
+    max-width: 600px;
+    opacity: 0.8;
+}
+
+/* BUTTON */
+.btn {
+    padding: 12px 25px;
+    margin-top: 20px;
+    border-radius: 30px;
+    background: #22c55e;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #16a34a;
+    transform: scale(1.1);
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    width: 260px;
+    padding: 25px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* MAP */
+iframe {
+    border-radius: 15px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+}
+
+/* ANIMATIONS */
+@keyframes fadeDown {
+    from {opacity:0; transform:translateY(-20px);}
+    to {opacity:1;}
+}
+
+@keyframes fadeIn {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+@keyframes zoomIn {
+    from {transform:scale(0.8); opacity:0;}
+    to {transform:scale(1);}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Lions Cricket Academy</h1>
+    <p class="tagline">Rangbari, Kota, Rajasthan</p>
+    <p class="tagline">Spirit to Achieve Goals</p>
+</header>
+
+<div class="hero">
+    <h2>Train Like a Champion 🏏</h2>
+    <p>
+        Building disciplined, confident and skilled cricketers focused on performance, growth and success.
+    </p>
+    <a href="https://wa.me/919672696091" class="btn">Join Now</a>
+</div>
+
+<section>
+    <h2>About Academy</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+        Lions Cricket Academy in Rangbari, Kota provides professional cricket coaching for all age groups.
+        Under coach Jiger Singh, we focus on discipline, teamwork, and match performance.
+    </p>
+</section>
+
+<section>
+    <h2>Training Schedule</h2>
+    <div class="cards">
+        <div class="card">Monday–Sunday<br>Holiday: Wednesday</div>
+        <div class="card">Morning<br>9:00 – 11:00 AM</div>
+        <div class="card">Evening<br>4:30 – 6:30 PM</div>
+    </div>
+</section>
+
+<section>
+    <h2>Facilities</h2>
+    <div class="cards">
+        <div class="card">Practice Nets</div>
+        <div class="card">Fitness Training</div>
+        <div class="card">Match Practice</div>
+        <div class="card">Regular Tournaments</div>
+    </div>
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <p style="text-align:center;">
+        📍 Rangbari, Kota, Rajasthan <br>
+        📞 +91 9672696091 <br>
+        📷 @lionscricketacademykota
+    </p>
+
+    <div style="text-align:center; margin-top:20px;">
+        <iframe 
+        src="https://www.google.com/maps?q=Rangbari%20Kota%20Rajasthan&output=embed"
+        width="90%" height="300"></iframe>
+    </div>
+
+    <p style="text-align:center;">
+        <a href="https://wa.me/919672696091" class="btn">Chat on WhatsApp</a>
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Lions Cricket Academy</p>
+</footer>
+
+</body>
+</html>
