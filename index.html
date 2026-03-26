@@ -1,16 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta name="google-site-verification" content="j6GX9C-ee7OCwBPT1sj89ey_9LPqY_vB1ZQB0jNw4kQ" />
-<title>Lions Cricket Academy Kota</title>
-</head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lions Cricket Academy - Kota</title>
+
+<meta name="google-site-verification" content="j6GX9C-ee7OCwBPT1sj89ey_9LPqY_vB1ZQB0jNw4kQ" />
+
+<title>Lions Cricket Academy Kota</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -21,18 +24,12 @@ body {
 /* HEADER */
 header {
     text-align: center;
-    padding: 25px;
-    animation: fadeDown 1s ease;
+    padding: 20px;
 }
 
-h1 {
-    font-size: 36px;
-    margin: 0;
-}
-
-.tagline {
-    opacity: 0.8;
-    animation: fadeIn 2s ease;
+.logo {
+    width: 90px;
+    margin-bottom: 10px;
 }
 
 /* HERO */
@@ -47,12 +44,6 @@ h1 {
 
 .hero h2 {
     font-size: 42px;
-    animation: zoomIn 1s ease;
-}
-
-.hero p {
-    max-width: 600px;
-    opacity: 0.8;
 }
 
 /* BUTTON */
@@ -97,11 +88,25 @@ h2 {
     background: rgba(255,255,255,0.05);
     backdrop-filter: blur(10px);
     text-align: center;
+}
+
+/* GALLERY */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+    padding: 0 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 12px;
+    cursor: pointer;
     transition: 0.3s;
 }
 
-.card:hover {
-    transform: translateY(-10px);
+.gallery img:hover {
+    transform: scale(1.05);
 }
 
 /* MAP */
@@ -116,36 +121,22 @@ footer {
     background: #020617;
 }
 
-/* ANIMATIONS */
-@keyframes fadeDown {
-    from {opacity:0; transform:translateY(-20px);}
-    to {opacity:1;}
-}
-
-@keyframes fadeIn {
-    from {opacity:0;}
-    to {opacity:1;}
-}
-
-@keyframes zoomIn {
-    from {transform:scale(0.8); opacity:0;}
-    to {transform:scale(1);}
-}
 </style>
 </head>
 
 <body>
 
 <header>
+    <img src="logo.png" alt="Logo" class="logo">
     <h1>Lions Cricket Academy</h1>
-    <p class="tagline">Rangbari, Kota, Rajasthan</p>
-    <p class="tagline">Spirit to Achieve Goals</p>
+    <p>Rangbari, Kota, Rajasthan</p>
+    <p>Spirit to Achieve Goals</p>
 </header>
 
 <div class="hero">
     <h2>Train Like a Champion 🏏</h2>
     <p>
-        Building disciplined, confident and skilled cricketers focused on performance, growth and success.
+        Building disciplined, confident and skilled cricketers focused on performance and success.
     </p>
     <a href="https://wa.me/919672696091" class="btn">Join Now</a>
 </div>
@@ -153,8 +144,8 @@ footer {
 <section>
     <h2>About Academy</h2>
     <p style="text-align:center; max-width:700px; margin:auto;">
-        Lions Cricket Academy in Rangbari, Kota provides professional cricket coaching for all age groups.
-        Under coach Jiger Singh, we focus on discipline, teamwork, and match performance.
+        Lions Cricket Academy in Rangbari, Kota provides professional cricket coaching.
+        We focus on discipline, teamwork, and match performance.
     </p>
 </section>
 
@@ -173,7 +164,17 @@ footer {
         <div class="card">Practice Nets</div>
         <div class="card">Fitness Training</div>
         <div class="card">Match Practice</div>
-        <div class="card">Regular Tournaments</div>
+        <div class="card">Tournaments</div>
+    </div>
+</section>
+
+<!-- GALLERY SECTION -->
+<section>
+    <h2>Gallery</h2>
+
+    <div class="gallery">
+        <img src="poster.png" alt="Poster">
+        <img src="logo.png" alt="Logo">
     </div>
 </section>
 
