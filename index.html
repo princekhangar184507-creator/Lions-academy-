@@ -5,18 +5,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="google-site-verification" content="j6GX9C-ee7OCwBPT1sj89ey_9LPqY_vB1ZQB0jNw4kQ" />
-
 <title>Lions Cricket Academy Kota</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
 
+/* COLORS */
+:root {
+    --primary: #0f172a;
+    --secondary: #eab308;
+    --accent: #22c55e;
+}
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #0f172a, #1e293b);
+    background: var(--primary);
     color: white;
 }
 
@@ -28,48 +33,62 @@ header {
 
 .logo {
     width: 90px;
-    margin-bottom: 10px;
+}
+
+h1 {
+    color: var(--secondary);
 }
 
 /* HERO */
 .hero {
-    height: 90vh;
+    height: 80vh;
+    background: url("poster.png") center/cover no-repeat;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+}
+
+.hero * {
+    position: relative;
 }
 
 .hero h2 {
-    font-size: 42px;
+    font-size: 40px;
+    color: var(--secondary);
+}
+
+.tagline {
+    opacity: 0.9;
 }
 
 /* BUTTON */
 .btn {
-    padding: 12px 25px;
-    margin-top: 20px;
-    border-radius: 30px;
-    background: #22c55e;
+    background: var(--accent);
     color: black;
-    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 30px;
     font-weight: bold;
-    transition: 0.3s;
+    text-decoration: none;
 }
 
-.btn:hover {
-    background: #16a34a;
-    transform: scale(1.1);
-}
-
-/* SECTIONS */
+/* SECTION */
 section {
     padding: 60px 20px;
 }
 
 h2 {
     text-align: center;
-    margin-bottom: 30px;
+    color: var(--secondary);
 }
 
 /* CARDS */
@@ -77,30 +96,40 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
+    gap: 20px;
 }
 
 .card {
-    width: 260px;
-    padding: 25px;
-    border-radius: 15px;
-    background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(10px);
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
     text-align: center;
+}
+
+/* COACH */
+.coach {
+    text-align: center;
+}
+
+.coach img {
+    width: 180px;
+    border-radius: 12px;
+    margin-bottom: 10px;
 }
 
 /* GALLERY */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 15px;
-    padding: 0 20px;
 }
 
 .gallery img {
     width: 100%;
+    height: 160px;
+    object-fit: cover;
     border-radius: 12px;
-    cursor: pointer;
     transition: 0.3s;
 }
 
@@ -108,16 +137,11 @@ h2 {
     transform: scale(1.05);
 }
 
-/* MAP */
-iframe {
-    border-radius: 15px;
-}
-
 /* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
-    background: #020617;
+    background: black;
 }
 
 </style>
@@ -126,34 +150,65 @@ footer {
 <body>
 
 <header>
-    <img src="logo.png" alt="Logo" class="logo">
+    <img src="logo.png" class="logo">
     <h1>Lions Cricket Academy</h1>
-    <p>Rangbari, Kota, Rajasthan</p>
-    <p>Spirit to Achieve Goals</p>
+    <p>Rangbari, Kota</p>
 </header>
 
 <div class="hero">
     <h2>Train Like a Champion 🏏</h2>
-    <p>
-        Building disciplined, confident and skilled cricketers focused on performance and success.
+
+    <p class="tagline">
+        Discipline • Skill • Performance
     </p>
-    <a href="https://wa.me/919672696091" class="btn">Join Now</a>
+
+    <p>
+        ✔ Professional Coaching <br>
+        ✔ All Age Groups <br>
+        ✔ Match Practice & Fitness Training
+    </p>
+
+    <p style="font-weight:bold; color:var(--secondary);">
+        📞 +91 9672696091
+    </p>
+
+    <!-- BUTTONS -->
+    <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin-top:15px;">
+        <a href="https://forms.gle/jxF3fKozLCgZVuj4A" class="btn">Register Now</a>
+        <a href="https://wa.me/919672696091" class="btn" style="background:#25D366;">WhatsApp</a>
+    </div>
 </div>
 
 <section>
     <h2>About Academy</h2>
     <p style="text-align:center; max-width:700px; margin:auto;">
-        Lions Cricket Academy in Rangbari, Kota provides professional cricket coaching.
-        We focus on discipline, teamwork, and match performance.
+        Professional cricket coaching for all levels focusing on skills, fitness and match performance.
     </p>
+</section>
+
+<!-- COACH -->
+<section>
+    <h2>Our Coach</h2>
+
+    <div class="coach">
+        <img src="coach.png" alt="Coach">
+
+        <h3>Coach Jiger Singh</h3>
+
+        <p>
+            🏏 SGFI Player | Inter-University <br>
+            🎓 NIS Patiala Certified <br>
+            🇮🇳 Sports Authority of India Certified
+        </p>
+    </div>
 </section>
 
 <section>
     <h2>Training Schedule</h2>
     <div class="cards">
         <div class="card">Monday–Sunday<br>Holiday: Wednesday</div>
-        <div class="card">Morning<br>9:00 – 11:00 AM</div>
-        <div class="card">Evening<br>4:30 – 6:30 PM</div>
+        <div class="card">Morning<br>9–11 AM</div>
+        <div class="card">Evening<br>4:30–6:30 PM</div>
     </div>
 </section>
 
@@ -167,32 +222,23 @@ footer {
     </div>
 </section>
 
-<!-- GALLERY SECTION -->
+<!-- GALLERY -->
 <section>
     <h2>Gallery</h2>
 
     <div class="gallery">
+        <img src="group.jpg" alt="Group Photo">
+        <img src="net1.jpg" alt="Net Practice 1">
+        <img src="net2.jpg" alt="Net Practice 2">
         <img src="poster.png" alt="Poster">
-        <img src="logo.png" alt="Logo">
     </div>
 </section>
 
 <section>
     <h2>Contact</h2>
     <p style="text-align:center;">
-        📍 Rangbari, Kota, Rajasthan <br>
-        📞 +91 9672696091 <br>
-        📷 @lionscricketacademykota
-    </p>
-
-    <div style="text-align:center; margin-top:20px;">
-        <iframe 
-        src="https://www.google.com/maps?q=Rangbari%20Kota%20Rajasthan&output=embed"
-        width="90%" height="300"></iframe>
-    </div>
-
-    <p style="text-align:center;">
-        <a href="https://wa.me/919672696091" class="btn">Chat on WhatsApp</a>
+        📍 Rangbari, Kota <br>
+        📞 +91 9672696091
     </p>
 </section>
 
