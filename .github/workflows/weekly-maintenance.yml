@@ -1,0 +1,52 @@
+name: Weekly Website Maintenance
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "30 3 * * 1"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  maintenance:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout website
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Run free website scanner
+        run: node .github/maintenance/maintenance-report.mjs
+
+      - name: Upload maintenance report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: website-maintenance-report
+          path: maintenance-report.md
+          if-no-files-found: warn
+
+      - name: Create GitHub Issue
+        if: always() && hashFiles('maintenance-report.md') != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --title "Weekly Website Maintenance Report" \
+            --body-file maintenance-report.md \
+            --label "maintenance" || \
+          gh issue create \
+            --title "Weekly Website Maintenance Report" \
+            --body-file maintenance-report.md
