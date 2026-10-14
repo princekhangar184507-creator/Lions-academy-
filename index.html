@@ -3,23 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Best Cricket Academy in Kota | Lions Cricket Academy Rajasthan</title>
-<meta name="description" content="Train at Lions Cricket Academy in Rangbari, Kota, Rajasthan. Cricket coaching with Archery, Self Defence and Fitness. Contact us to book a free trial.">
+<title>Lions Cricket Academy Kota | Cricket Coaching, Archery & Fitness</title>
+<meta name="description" content="Join Lions Cricket Academy in Rangbari, Kota for cricket coaching, archery, self-defence and fitness training. Contact us to book a free trial session.">
 <meta name="keywords" content="cricket academy kota, best cricket academy kota, lions cricket academy, archery kota, self defence kota, fitness academy kota">
 <meta name="author" content="Lions Cricket Academy">
 <meta name="theme-color" content="#201D18">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://princekhangar184507-creator.github.io/Lions-academy-/">
-<meta property="og:title" content="Lions Cricket Academy Kota">
+<meta property="og:title" content="Lions Cricket Academy Kota | Cricket Coaching, Archery & Fitness">
 <meta property="og:site_name" content="Lions Cricket Academy Kota">
-<meta property="og:description" content="Best sports academy in Kota — Cricket, Archery, Self Defence & Fitness.">
+<meta property="og:description" content="Cricket coaching, archery, self-defence and fitness training in Rangbari, Kota. Contact Lions Cricket Academy to book a free trial.">
 <meta property="og:url" content="https://princekhangar184507-creator.github.io/Lions-academy-/">
 <meta property="og:image" content="https://princekhangar184507-creator.github.io/Lions-academy-/logo.png">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_IN">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Lions Cricket Academy | Cricket Coaching in Kota">
-<meta name="twitter:description" content="Cricket coaching in Rangbari, Kota, with Archery, Self Defence and Fitness. Contact Lions Cricket Academy to book a free trial.">
+<meta name="twitter:title" content="Lions Cricket Academy Kota | Cricket Coaching, Archery & Fitness">
+<meta name="twitter:description" content="Cricket coaching, archery, self-defence and fitness training in Rangbari, Kota. Contact us to book a free trial session.">
 <meta name="twitter:image" content="https://princekhangar184507-creator.github.io/Lions-academy-/logo.png">
 <meta name="application-name" content="Lions Cricket Academy Kota">
 <meta name="apple-mobile-web-app-title" content="Lions Cricket Academy Kota">
@@ -879,7 +879,8 @@ header.scrolled { box-shadow: var(--shadow-1); }
 .lb { position:fixed;inset:0;z-index:999;background:rgba(30,30,30,0.96);backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center; }
 .lb.open { display:flex; }
 .lb img { max-width:90vw;max-height:85vh;object-fit:contain;border-radius:var(--r-md); }
-.lb-x { position:absolute;top:20px;right:24px;font-size:1.8rem;color:#aaa;cursor:pointer;transition:color 0.2s; }
+.lb-x { position:absolute;top:20px;right:24px;font-size:1.8rem;color:#aaa;cursor:pointer;transition:color 0.2s;background:transparent;border:0;padding:8px;line-height:1; }
+.lb-x:focus-visible { outline:2px solid var(--gold); outline-offset:4px; }
 .lb-x:hover { color:#fff; }
 
 /* ══════════════════════════════════════
@@ -1219,6 +1220,19 @@ footer strong { color: var(--orange); }
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"What is the minimum age to join?","acceptedAnswer":{"@type":"Answer","text":"We train all age groups, from beginners to those preparing for district and state level competition. Speak with the coach to find the right batch for your child's age."}},
+    {"@type":"Question","name":"Do you offer a free trial session?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can register for a free trial through our online form or by messaging us directly on WhatsApp."}},
+    {"@type":"Question","name":"Can I join more than one discipline?","acceptedAnswer":{"@type":"Answer","text":"Absolutely — many of our students train in Cricket alongside Archery, Self Defence or Fitness. Ask your coach about combined scheduling."}},
+    {"@type":"Question","name":"What are the batch timings?","acceptedAnswer":{"@type":"Answer","text":"Morning batch runs 9:00–11:00 AM and evening batch runs 4:30–6:30 PM, Monday to Sunday, with Wednesday as the weekly holiday."}},
+    {"@type":"Question","name":"Is the coaching certified?","acceptedAnswer":{"@type":"Answer","text":"Coach Jiger Singh is NIS Patiala certified and Sports Authority of India certified, with SGFI inter-university playing experience."}}
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -1236,15 +1250,15 @@ footer strong { color: var(--orange); }
 </div>
 
 <!-- LIGHTBOX -->
-<div class="lb" id="lb" onclick="closeLB()">
-  <span class="lb-x" onclick="closeLB()">✕</span>
-  <img id="lb-img" src="" alt="">
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Gallery image preview" aria-hidden="true" onclick="closeLB()">
+  <button type="button" class="lb-x" aria-label="Close image preview" onclick="event.stopPropagation(); closeLB()">✕</button>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
 </div>
 
 <!-- ═══ HEADER ═══ -->
 <header id="site-header">
   <div class="hd-brand">
-    <div class="logo-box"><img src="logo.png" alt="Lions Cricket Academy"></div>
+    <div class="logo-box"><img src="logo.png" alt="Lions Cricket Academy logo" width="517" height="482"></div>
     <div>
       <div class="hd-name">LIONS CRICKET ACADEMY</div>
       <div class="hd-loc">📍 Rangbari, Kota, Rajasthan</div>
@@ -1280,6 +1294,7 @@ footer strong { color: var(--orange); }
 </nav>
 
 <!-- ═══ HERO ═══ -->
+<main id="main-content">
 <section class="hero" id="top">
   <div class="hero-eyebrow">Best Sports Academy in Kota — Est. 2021</div>
   <h1 class="hero-title">
@@ -1333,7 +1348,7 @@ footer strong { color: var(--orange); }
 <!-- ═══ WHY CHOOSE US ═══ -->
 <div class="wrap" id="why">
   <div class="eyebrow">Why Lions</div>
-  <div class="sec-title">WHY FAMILIES <span class="t-red">CHOOSE US</span></div>
+  <h2 class="sec-title">WHY FAMILIES <span class="t-red">CHOOSE US</span></h2>
   <div class="why-grid">
     <div class="wc reveal">
       <div class="wc-icon">🎓</div>
@@ -1402,7 +1417,7 @@ footer strong { color: var(--orange); }
 <div class="sep"></div>
 <div class="wrap" id="about">
   <div class="eyebrow">About</div>
-  <div class="sec-title">THE <span class="t-red">ACADEMY</span></div>
+  <h2 class="sec-title">THE <span class="t-red">ACADEMY</span></h2>
   <div class="about-grid">
     <div class="about-text reveal">
       <p>Lions Cricket Academy is one of Rajasthan's most respected multi-sport institutions, based in Rangbari, Kota. We combine NIS certified coaching with genuine personal attention to unlock every athlete's true potential.</p>
@@ -1438,10 +1453,10 @@ footer strong { color: var(--orange); }
 <div class="sep"></div>
 <div class="wrap" id="coach">
   <div class="eyebrow">Leadership</div>
-  <div class="sec-title">OUR <span class="t-red">COACH</span></div>
+  <h2 class="sec-title">OUR <span class="t-red">COACH</span></h2>
   <div class="coach-card reveal">
     <div class="coach-img-wrap">
-      <img src="coach.png" class="coach-img" alt="Coach Jiger Singh">
+      <img src="coach.png" class="coach-img" alt="Coach Jiger Singh at Lions Cricket Academy" width="1024" height="1536">
     </div>
     <div>
       <div class="coach-name">Coach Jiger Singh</div>
@@ -1473,7 +1488,7 @@ footer strong { color: var(--orange); }
 <div class="sep" style="margin-top:clamp(48px,8vw,96px);"></div>
 <div class="wrap" id="facilities">
   <div class="eyebrow">On The Ground</div>
-  <div class="sec-title">OUR <span class="t-red">FACILITIES</span></div>
+  <h2 class="sec-title">OUR <span class="t-red">FACILITIES</span></h2>
   <div class="fac-grid">
     <div class="fac reveal"><div class="fac-icon">🏟️</div><div class="fac-title">Full-Size Practice Ground</div><div class="fac-desc">Open turf for match-simulation cricket practice and fielding drills.</div></div>
     <div class="fac reveal"><div class="fac-icon">🎯</div><div class="fac-title">Dedicated Archery Range</div><div class="fac-desc">Marked distances and safety barriers for supervised archery sessions.</div></div>
@@ -1486,25 +1501,25 @@ footer strong { color: var(--orange); }
 <div class="sep" style="margin-top:clamp(48px,8vw,96px);"></div>
 <div class="wrap" id="gallery">
   <div class="eyebrow">Gallery</div>
-  <div class="sec-title">IN <span class="t-red">ACTION</span></div>
+  <h2 class="sec-title">IN <span class="t-red">ACTION</span></h2>
   <div class="gal-outer reveal">
     <div class="gal-track">
-      <div class="gi" onclick="openLB('group.jpg')"><img src="group.jpg" alt="Group" loading="lazy"></div>
-      <div class="gi" onclick="openLB('net1.jpg')"><img src="net1.jpg" alt="Nets" loading="lazy"></div>
-      <div class="gi" onclick="openLB('net2.jpg')"><img src="net2.jpg" alt="Training" loading="lazy"></div>
-      <div class="gi" onclick="openLB('poster.png')"><img src="poster.png" alt="Poster" loading="lazy"></div>
-      <div class="gi" onclick="openLB('img5.jpg')"><img src="img5.jpg" alt="S5" loading="lazy"></div>
-      <div class="gi" onclick="openLB('img6.jpg')"><img src="img6.jpg" alt="S6" loading="lazy"></div>
-      <div class="gi" onclick="openLB('img7.jpg')"><img src="img7.jpg" alt="S7" loading="lazy"></div>
-      <div class="gi" onclick="openLB('img8.jpg')"><img src="img8.jpg" alt="S8" loading="lazy"></div>
-      <div class="gi" onclick="openLB('group.jpg')"><img src="group.jpg" alt="Group" loading="lazy"></div>
-      <div class="gi" onclick="openLB('net1.jpg')"><img src="net1.jpg" alt="Nets" loading="lazy"></div>
-      <div class="gi" onclick="openLB('net2.jpg')"><img src="net2.jpg" alt="Training" loading="lazy"></div>
-      <div class="gi" onclick="openLB('poster.png')"><img src="poster.png" alt="Poster" loading="lazy"></div>
-      <div class="gi" onclick="openLB('img5.jpg')"><img src="img5.jpg" alt="S5" loading="lazy"></div>
-      <div class="gi" onclick="openLB('img6.jpg')"><img src="img6.jpg" alt="S6" loading="lazy"></div>
-      <div class="gi" onclick="openLB('img7.jpg')"><img src="img7.jpg" alt="S7" loading="lazy"></div>
-      <div class="gi" onclick="openLB('img8.jpg')"><img src="img8.jpg" alt="S8" loading="lazy"></div>
+      <div class="gi" onclick="openLB('group.jpg')" role="button" tabindex="0" aria-label="Open photo: Lions Cricket Academy students gathered at the cricket ground"><img src="group.jpg" alt="Lions Cricket Academy students gathered at the cricket ground" loading="lazy" width="2048" height="1536"></div>
+      <div class="gi" onclick="openLB('net1.jpg')" role="button" tabindex="0" aria-label="Open photo: Cricket practice nets at Lions Cricket Academy in Kota"><img src="net1.jpg" alt="Cricket practice nets at Lions Cricket Academy in Kota" loading="lazy" width="4096" height="3072"></div>
+      <div class="gi" onclick="openLB('net2.jpg')" role="button" tabindex="0" aria-label="Open photo: Cricket training nets and practice area in Kota"><img src="net2.jpg" alt="Cricket training nets and practice area in Kota" loading="lazy" width="4096" height="3072"></div>
+      <div class="gi" onclick="openLB('poster.png')" role="button" tabindex="0" aria-label="Open photo: Lions Cricket Academy training and admission poster"><img src="poster.png" alt="Lions Cricket Academy training and admission poster" loading="lazy" width="656" height="914"></div>
+      <div class="gi" onclick="openLB('img5.jpg')" role="button" tabindex="0" aria-label="Open photo: Students training at Lions Cricket Academy"><img src="img5.jpg" alt="Students training at Lions Cricket Academy" loading="lazy" width="1446" height="540"></div>
+      <div class="gi" onclick="openLB('img6.jpg')" role="button" tabindex="0" aria-label="Open photo: Sports training at Lions Cricket Academy in Kota"><img src="img6.jpg" alt="Sports training at Lions Cricket Academy in Kota" loading="lazy" width="720" height="1186"></div>
+      <div class="gi" onclick="openLB('img7.jpg')" role="button" tabindex="0" aria-label="Open photo: Lions Cricket Academy training session"><img src="img7.jpg" alt="Lions Cricket Academy training session" loading="lazy" width="696" height="540"></div>
+      <div class="gi" onclick="openLB('img8.jpg')" role="button" tabindex="0" aria-label="Open photo: Cricket academy ground and training activity"><img src="img8.jpg" alt="Cricket academy ground and training activity" loading="lazy" width="720" height="526"></div>
+      <div class="gi" onclick="openLB('group.jpg')" role="button" tabindex="0" aria-label="Open photo: Lions Cricket Academy students gathered at the cricket ground"><img src="group.jpg" alt="Lions Cricket Academy students gathered at the cricket ground" loading="lazy" width="2048" height="1536"></div>
+      <div class="gi" onclick="openLB('net1.jpg')" role="button" tabindex="0" aria-label="Open photo: Cricket practice nets at Lions Cricket Academy in Kota"><img src="net1.jpg" alt="Cricket practice nets at Lions Cricket Academy in Kota" loading="lazy" width="4096" height="3072"></div>
+      <div class="gi" onclick="openLB('net2.jpg')" role="button" tabindex="0" aria-label="Open photo: Cricket training nets and practice area in Kota"><img src="net2.jpg" alt="Cricket training nets and practice area in Kota" loading="lazy" width="4096" height="3072"></div>
+      <div class="gi" onclick="openLB('poster.png')" role="button" tabindex="0" aria-label="Open photo: Lions Cricket Academy training and admission poster"><img src="poster.png" alt="Lions Cricket Academy training and admission poster" loading="lazy" width="656" height="914"></div>
+      <div class="gi" onclick="openLB('img5.jpg')" role="button" tabindex="0" aria-label="Open photo: Students training at Lions Cricket Academy"><img src="img5.jpg" alt="Students training at Lions Cricket Academy" loading="lazy" width="1446" height="540"></div>
+      <div class="gi" onclick="openLB('img6.jpg')" role="button" tabindex="0" aria-label="Open photo: Sports training at Lions Cricket Academy in Kota"><img src="img6.jpg" alt="Sports training at Lions Cricket Academy in Kota" loading="lazy" width="720" height="1186"></div>
+      <div class="gi" onclick="openLB('img7.jpg')" role="button" tabindex="0" aria-label="Open photo: Lions Cricket Academy training session"><img src="img7.jpg" alt="Lions Cricket Academy training session" loading="lazy" width="696" height="540"></div>
+      <div class="gi" onclick="openLB('img8.jpg')" role="button" tabindex="0" aria-label="Open photo: Cricket academy ground and training activity"><img src="img8.jpg" alt="Cricket academy ground and training activity" loading="lazy" width="720" height="526"></div>
     </div>
   </div>
 </div>
@@ -1513,7 +1528,7 @@ footer strong { color: var(--orange); }
 <div class="sep"></div>
 <div class="wrap" id="reviews">
   <div class="eyebrow">Student Reviews</div>
-  <div class="sec-title">WHAT THEY <span class="t-red">SAY</span></div>
+  <h2 class="sec-title">WHAT THEY <span class="t-red">SAY</span></h2>
   <div class="rate-summary reveal">
     <div class="rate-num">5.0</div>
     <div>
@@ -1535,7 +1550,7 @@ footer strong { color: var(--orange); }
 <div class="sep"></div>
 <div class="wrap" id="admission">
   <div class="eyebrow">Getting Started</div>
-  <div class="sec-title">ADMISSION <span class="t-red">PROCESS</span></div>
+  <h2 class="sec-title">ADMISSION <span class="t-red">PROCESS</span></h2>
   <div class="adm-grid">
     <div class="adm reveal">
       <div class="adm-num">01</div>
@@ -1564,7 +1579,7 @@ footer strong { color: var(--orange); }
 <div class="sep"></div>
 <div class="wrap" id="faq">
   <div class="eyebrow">Questions</div>
-  <div class="sec-title">FREQUENTLY <span class="t-red">ASKED</span></div>
+  <h2 class="sec-title">FREQUENTLY <span class="t-red">ASKED</span></h2>
   <div class="faq-list">
     <div class="faq-item reveal">
       <button class="faq-q" aria-expanded="false">
@@ -1623,7 +1638,7 @@ footer strong { color: var(--orange); }
 <!-- ═══ CONTACT ═══ -->
 <div class="wrap" id="contact">
   <div class="eyebrow">Find Us</div>
-  <div class="sec-title">GET IN <span class="t-red">TOUCH</span></div>
+  <h2 class="sec-title">GET IN <span class="t-red">TOUCH</span></h2>
   <div class="contact-grid">
     <div class="cc-list reveal">
       <div class="cc"><div class="cc-icon-box">📍</div><div><span class="cc-lbl">Location</span><span class="cc-val">Rangbari, Kota, Rajasthan</span></div></div>
@@ -1640,11 +1655,13 @@ footer strong { color: var(--orange); }
   </div>
 </div>
 
+</main>
+
 <!-- ═══ FOOTER ═══ -->
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
-      <img src="logo.png" class="footer-logo" alt="Lions Cricket Academy">
+      <img src="logo.png" class="footer-logo" alt="Lions Cricket Academy logo" width="517" height="482">
       <div>
         <div class="footer-name">LIONS CRICKET ACADEMY</div>
         <p style="margin-top:4px;">© 2026 <strong>Lions Cricket Academy</strong><br>Rangbari, Kota, Rajasthan</p>
@@ -1777,9 +1794,49 @@ const co = new IntersectionObserver(entries => {
 document.querySelectorAll('[data-count]').forEach(el => co.observe(el));
 
 /* LIGHTBOX */
-function openLB(s){ document.getElementById('lb-img').src = s; document.getElementById('lb').classList.add('open'); }
-function closeLB(){ document.getElementById('lb').classList.remove('open'); }
-document.addEventListener('keydown', e => { if(e.key === 'Escape') closeLB(); });
+let lastGalleryTrigger = null;
+function openLB(s){
+  const image = document.getElementById('lb-img');
+  const lightbox = document.getElementById('lb');
+  if (!image || !lightbox) return;
+  lastGalleryTrigger = document.activeElement;
+  image.src = s;
+  image.alt = ({
+    'group.jpg': 'Lions Cricket Academy students gathered at the cricket ground',
+    'net1.jpg': 'Cricket practice nets at Lions Cricket Academy in Kota',
+    'net2.jpg': 'Cricket training nets and practice area in Kota',
+    'poster.png': 'Lions Cricket Academy training and admission poster',
+    'img5.jpg': 'Students training at Lions Cricket Academy',
+    'img6.jpg': 'Sports training at Lions Cricket Academy in Kota',
+    'img7.jpg': 'Lions Cricket Academy training session',
+    'img8.jpg': 'Cricket academy ground and training activity'
+  })[s] || 'Lions Cricket Academy gallery photo';
+  lightbox.classList.add('open');
+  lightbox.setAttribute('aria-hidden', 'false');
+  const closeButton = lightbox.querySelector('.lb-x');
+  if (closeButton) closeButton.focus();
+}
+function closeLB(){
+  const lightbox = document.getElementById('lb');
+  if (!lightbox) return;
+  lightbox.classList.remove('open');
+  lightbox.setAttribute('aria-hidden', 'true');
+  if (lastGalleryTrigger && typeof lastGalleryTrigger.focus === 'function') lastGalleryTrigger.focus();
+}
+document.querySelectorAll('.gi[role="button"]').forEach(card => {
+  card.addEventListener('keydown', event => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      card.click();
+    }
+  });
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape') {
+    closeLB();
+    closeMobileNav();
+  }
+});
 
 /* ── GALLERY: auto-scroll + manual drag/swipe/wheel ── */
 (function(){
