@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://princekhangar184507-creator.github.io/Lions-academy-/sitemap.xml
